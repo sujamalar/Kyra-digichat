@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DigiChat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="page.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="log_out()" style="margin-top: 20px;">Logout</button>
+	<center>
+		<h1 class="header" style="color: whitesmoke; font-size:bold;">	
+			DigiChat	
+			<sup><sup><sup><sup>
+				<img src="https://img.icons8.com/external-lineal-color-zulfa-mahendra/2x/external-smartphone-deep-learning-lineal-color-zulfa-mahendra.png" style="pointer-events: none; width: 40px;">
+			</sup></sup></sup></sup>
+		</h1>
+		<h3 class="color_white" id="username"></h3>
+		<div class="form-group input_div_room_page">
+			<label style="color: black;">Add Room:</label>
+<input id="add_room" placeholder="Add Room" class="form-control" type="text">
+		</div>
+		<button class="btn btn-success" onclick="addroom()" id="add_btn"> Add Room</button>
+		<h3 style="color: black, bold;" id="trending"><bold>#TRENDINGROOMS</bold></h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="page2.js"></script>
+</body>
+</html>
